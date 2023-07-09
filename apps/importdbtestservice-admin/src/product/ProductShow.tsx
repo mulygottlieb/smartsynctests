@@ -24,7 +24,6 @@ export const ProductShow = (props: ShowProps): React.ReactElement => {
         <TextField label="Name" source="name" />
         <TextField label="Item Price" source="itemPrice" />
         <TextField label="Description" source="description" />
-        <TextField label="productfield" source="productfield" />
         <ReferenceManyField reference="Order" target="productId" label="Orders">
           <Datagrid rowClick="show">
             <TextField label="Id" source="id" />
@@ -48,7 +47,6 @@ export const ProductShow = (props: ShowProps): React.ReactElement => {
               <TextField source={PRODUCT_TITLE_FIELD} />
             </ReferenceField>
             <TextField label="Status" source="status" />
-            <TextField label="orderfields" source="orderfields" />
           </Datagrid>
         </ReferenceManyField>
       </SimpleShowLayout>

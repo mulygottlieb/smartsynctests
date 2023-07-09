@@ -30,10 +30,6 @@ export const AddressEdit = (props: EditProps): React.ReactElement => {
         <TextInput label="State" source="state" />
         <NumberInput step={1} label="Zip" source="zip" />
         <TextInput label="Zip2" source="zip2" />
-        <TextInput label="Zip3" source="zip3" />
-        <TextInput label="Zip4" source="zip4" />
-        <TextInput label="Zip5" source="zip5" />
-        <TextInput label="zip6" source="zip6" />
       </SimpleForm>
     </Edit>
   );

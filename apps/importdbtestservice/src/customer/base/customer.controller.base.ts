@@ -333,7 +333,6 @@ export class CustomerControllerBase {
         },
 
         status: true,
-        orderfields: true,
       },
     });
     if (results === null) {
