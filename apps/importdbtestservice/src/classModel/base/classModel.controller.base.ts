@@ -57,6 +57,7 @@ export class ClassModelControllerBase {
         updatedAt: true,
         newField: true,
         muly: true,
+        classfield: true,
       },
     });
   }
@@ -83,6 +84,7 @@ export class ClassModelControllerBase {
         updatedAt: true,
         newField: true,
         muly: true,
+        classfield: true,
       },
     });
   }
@@ -110,6 +112,7 @@ export class ClassModelControllerBase {
         updatedAt: true,
         newField: true,
         muly: true,
+        classfield: true,
       },
     });
     if (result === null) {
@@ -146,6 +149,7 @@ export class ClassModelControllerBase {
           updatedAt: true,
           newField: true,
           muly: true,
+          classfield: true,
         },
       });
     } catch (error) {
@@ -181,6 +185,7 @@ export class ClassModelControllerBase {
           updatedAt: true,
           newField: true,
           muly: true,
+          classfield: true,
         },
       });
     } catch (error) {
