@@ -63,6 +63,7 @@ export class AddressControllerBase {
         zip: true,
         zip2: true,
         zip3: true,
+        zip4: true,
       },
     });
   }
@@ -94,6 +95,7 @@ export class AddressControllerBase {
         zip: true,
         zip2: true,
         zip3: true,
+        zip4: true,
       },
     });
   }
@@ -126,6 +128,7 @@ export class AddressControllerBase {
         zip: true,
         zip2: true,
         zip3: true,
+        zip4: true,
       },
     });
     if (result === null) {
@@ -167,6 +170,7 @@ export class AddressControllerBase {
           zip: true,
           zip2: true,
           zip3: true,
+          zip4: true,
         },
       });
     } catch (error) {
@@ -207,6 +211,7 @@ export class AddressControllerBase {
           zip: true,
           zip2: true,
           zip3: true,
+          zip4: true,
         },
       });
     } catch (error) {

@@ -29,6 +29,7 @@ const CREATE_INPUT = {
   zip: 42,
   zip2: "exampleZip2",
   zip3: "exampleZip3",
+  zip4: "exampleZip4",
 };
 const CREATE_RESULT = {
   id: "exampleId",
@@ -41,6 +42,7 @@ const CREATE_RESULT = {
   zip: 42,
   zip2: "exampleZip2",
   zip3: "exampleZip3",
+  zip4: "exampleZip4",
 };
 const FIND_MANY_RESULT = [
   {
@@ -54,6 +56,7 @@ const FIND_MANY_RESULT = [
     zip: 42,
     zip2: "exampleZip2",
     zip3: "exampleZip3",
+    zip4: "exampleZip4",
   },
 ];
 const FIND_ONE_RESULT = {
@@ -67,6 +70,7 @@ const FIND_ONE_RESULT = {
   zip: 42,
   zip2: "exampleZip2",
   zip3: "exampleZip3",
+  zip4: "exampleZip4",
 };
 
 const service = {
