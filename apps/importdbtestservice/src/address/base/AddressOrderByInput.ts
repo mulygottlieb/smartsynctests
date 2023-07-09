@@ -139,6 +139,17 @@ class AddressOrderByInput {
     nullable: true,
   })
   zip4?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["asc", "desc"],
+  })
+  @IsOptional()
+  @IsEnum(SortOrder)
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
+  zip5?: SortOrder;
 }
 
 export { AddressOrderByInput as AddressOrderByInput };
