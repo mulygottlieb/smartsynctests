@@ -68,7 +68,6 @@ export class SomeThingControllerBase {
 
         id: true,
         updatedAt: true,
-        newfield: true,
       },
     });
   }
@@ -100,7 +99,6 @@ export class SomeThingControllerBase {
 
         id: true,
         updatedAt: true,
-        newfield: true,
       },
     });
   }
@@ -133,7 +131,6 @@ export class SomeThingControllerBase {
 
         id: true,
         updatedAt: true,
-        newfield: true,
       },
     });
     if (result === null) {
@@ -183,7 +180,6 @@ export class SomeThingControllerBase {
 
           id: true,
           updatedAt: true,
-          newfield: true,
         },
       });
     } catch (error) {
@@ -224,7 +220,6 @@ export class SomeThingControllerBase {
 
           id: true,
           updatedAt: true,
-          newfield: true,
         },
       });
     } catch (error) {

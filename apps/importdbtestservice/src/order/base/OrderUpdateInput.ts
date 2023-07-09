@@ -17,7 +17,6 @@ import {
   IsNumber,
   ValidateNested,
   IsEnum,
-  IsString,
 } from "class-validator";
 import { CustomerWhereUniqueInput } from "../../customer/base/CustomerWhereUniqueInput";
 import { Type } from "class-transformer";
@@ -93,17 +92,6 @@ class OrderUpdateInput {
     nullable: true,
   })
   status?: "PENDING" | "COMPLETED" | "CANCELLED" | null;
-
-  @ApiProperty({
-    required: false,
-    type: String,
-  })
-  @IsString()
-  @IsOptional()
-  @Field(() => String, {
-    nullable: true,
-  })
-  orderfields?: string | null;
 }
 
 export { OrderUpdateInput as OrderUpdateInput };

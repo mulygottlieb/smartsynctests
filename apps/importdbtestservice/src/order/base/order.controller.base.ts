@@ -84,7 +84,6 @@ export class OrderControllerBase {
         },
 
         status: true,
-        orderfields: true,
       },
     });
   }
@@ -126,7 +125,6 @@ export class OrderControllerBase {
         },
 
         status: true,
-        orderfields: true,
       },
     });
   }
@@ -169,7 +167,6 @@ export class OrderControllerBase {
         },
 
         status: true,
-        orderfields: true,
       },
     });
     if (result === null) {
@@ -235,7 +232,6 @@ export class OrderControllerBase {
           },
 
           status: true,
-          orderfields: true,
         },
       });
     } catch (error) {
@@ -286,7 +282,6 @@ export class OrderControllerBase {
           },
 
           status: true,
-          orderfields: true,
         },
       });
     } catch (error) {

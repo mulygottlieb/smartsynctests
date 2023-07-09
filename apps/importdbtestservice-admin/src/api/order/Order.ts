@@ -11,5 +11,4 @@ export type Order = {
   customer?: Customer | null;
   product?: Product | null;
   status?: "PENDING" | "COMPLETED" | "CANCELLED" | null;
-  orderfields: string | null;
 };
