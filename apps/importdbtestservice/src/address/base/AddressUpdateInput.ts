@@ -116,6 +116,17 @@ class AddressUpdateInput {
     nullable: true,
   })
   zip4?: string | null;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  zip5?: string | null;
 }
 
 export { AddressUpdateInput as AddressUpdateInput };
