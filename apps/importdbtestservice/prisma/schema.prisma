@@ -15,7 +15,7 @@ model User {
   lastName  String?
   username  String   @unique
   password  String
-  roles     Json
+  roles     Json     @muly123
 }
 
 model ClassModel {
@@ -45,7 +45,7 @@ model Order {
   updatedAt  DateTime         @updatedAt
   quantity   Int?
   discount   Float?
-  totalPrice Int?             @totalpriceatt @totprice2att
+  totalPrice Int?             @muly456 @totalpriceatt @totprice2att
   customer   Customer?        @relation(fields: [customerId], references: [id])
   customerId String?
   product    Product?         @relation(fields: [productId], references: [id])
@@ -65,7 +65,8 @@ model Customer {
   phone        String?
   updatedAt    DateTime                  @updatedAt
   customerType EnumCustomerCustomerType? @default(INDIVIDUAL)
-  someThing    SomeThing?
+  someThing    SomeThing?                @relation(fields: [someThingId], references: [id])
+  someThingId  String?                   @unique
 }
 
 model Address {
@@ -78,7 +79,7 @@ model Address {
   city      String?
   state     String?
   zip       Int?
-  zip2      String?    @muly
+  zip2      String?    @muly @yuval
   zip3      String?
   zip4      String?
   zip5      String?    @zip5prop
