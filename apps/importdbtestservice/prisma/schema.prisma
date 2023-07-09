@@ -58,7 +58,7 @@ model Customer {
   address      Address?                  @relation(fields: [addressId], references: [id])
   addressId    String?
   createdAt    DateTime                  @default(now())
-  email        String?                   @vika
+  email        String?                   @vika @mor
   firstName    String?
   id           String                    @id @default(cuid())
   lastName     String?
