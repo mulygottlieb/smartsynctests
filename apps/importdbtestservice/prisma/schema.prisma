@@ -41,17 +41,18 @@ model Admin {
 }
 
 model Order {
-  id         String           @id @default(cuid())
-  createdAt  DateTime         @default(now())
-  updatedAt  DateTime         @updatedAt
-  quantity   Int?
-  discount   Float?
-  totalPrice Int?             @totalpriceatt @totprice2att
-  customer   Customer?        @relation(fields: [customerId], references: [id])
-  customerId String?
-  product    Product?         @relation(fields: [productId], references: [id])
-  productId  String?
-  status     EnumOrderStatus? @default(PENDING)
+  id          String           @id @default(cuid())
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  quantity    Int?
+  discount    Float?
+  totalPrice  Int?             @totalpriceatt @totprice2att
+  customer    Customer?        @relation(fields: [customerId], references: [id])
+  customerId  String?
+  product     Product?         @relation(fields: [productId], references: [id])
+  productId   String?
+  status      EnumOrderStatus? @default(PENDING)
+  orderfields String?
 }
 
 model Customer {

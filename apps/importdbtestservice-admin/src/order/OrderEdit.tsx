@@ -1,4 +1,5 @@
 import * as React from "react";
+
 import {
   Edit,
   SimpleForm,
@@ -6,7 +7,9 @@ import {
   NumberInput,
   ReferenceInput,
   SelectInput,
+  TextInput,
 } from "react-admin";
+
 import { CustomerTitle } from "../customer/CustomerTitle";
 import { ProductTitle } from "../product/ProductTitle";
 
@@ -39,6 +42,7 @@ export const OrderEdit = (props: EditProps): React.ReactElement => {
           allowEmpty
           optionValue="value"
         />
+        <TextInput label="orderfields" source="orderfields" />
       </SimpleForm>
     </Edit>
   );
