@@ -5,4 +5,5 @@ export type AddressWhereInput = {
   customers?: CustomerListRelationFilter;
   zip2?: StringNullableFilter;
   zip3?: StringNullableFilter;
+  zip4?: StringNullableFilter;
 };
