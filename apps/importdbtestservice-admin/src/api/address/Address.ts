@@ -11,8 +11,4 @@ export type Address = {
   state: string | null;
   zip: number | null;
   zip2: string | null;
-  zip3: string | null;
-  zip4: string | null;
-  zip5: string | null;
-  zip6: string | null;
 };

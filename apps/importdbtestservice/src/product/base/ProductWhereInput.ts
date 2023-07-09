@@ -14,7 +14,6 @@ import { ApiProperty } from "@nestjs/swagger";
 import { OrderListRelationFilter } from "../../order/base/OrderListRelationFilter";
 import { ValidateNested, IsOptional } from "class-validator";
 import { Type } from "class-transformer";
-import { StringNullableFilter } from "../../util/StringNullableFilter";
 
 @InputType()
 class ProductWhereInput {
@@ -29,17 +28,6 @@ class ProductWhereInput {
     nullable: true,
   })
   orders?: OrderListRelationFilter;
-
-  @ApiProperty({
-    required: false,
-    type: StringNullableFilter,
-  })
-  @Type(() => StringNullableFilter)
-  @IsOptional()
-  @Field(() => StringNullableFilter, {
-    nullable: true,
-  })
-  productfield?: StringNullableFilter;
 }
 
 export { ProductWhereInput as ProductWhereInput };
