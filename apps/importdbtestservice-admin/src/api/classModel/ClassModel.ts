@@ -4,4 +4,5 @@ export type ClassModel = {
   updatedAt: Date;
   newField: boolean;
   muly: string | null;
+  classfield: string | null;
 };

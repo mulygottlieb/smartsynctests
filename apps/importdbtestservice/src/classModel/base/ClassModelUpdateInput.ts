@@ -36,6 +36,17 @@ class ClassModelUpdateInput {
     nullable: true,
   })
   muly?: string | null;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  classfield?: string | null;
 }
 
 export { ClassModelUpdateInput as ClassModelUpdateInput };
