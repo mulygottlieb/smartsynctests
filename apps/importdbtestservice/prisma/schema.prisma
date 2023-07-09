@@ -81,6 +81,7 @@ model Address {
   zip       Int?
   zip2      String?
   zip3      String?
+  zip4      String?
 }
 
 model Product {

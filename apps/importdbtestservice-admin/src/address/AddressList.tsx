@@ -22,6 +22,7 @@ export const AddressList = (props: ListProps): React.ReactElement => {
         <TextField label="Zip" source="zip" />
         <TextField label="Zip2" source="zip2" />
         <TextField label="Zip3" source="zip3" />
+        <TextField label="Zip4" source="zip4" />
       </Datagrid>
     </List>
   );
