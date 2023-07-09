@@ -30,6 +30,7 @@ export const AddressShow = (props: ShowProps): React.ReactElement => {
         <TextField label="Zip3" source="zip3" />
         <TextField label="Zip4" source="zip4" />
         <TextField label="Zip5" source="zip5" />
+        <TextField label="zip6" source="zip6" />
         <ReferenceManyField
           reference="Customer"
           target="addressId"

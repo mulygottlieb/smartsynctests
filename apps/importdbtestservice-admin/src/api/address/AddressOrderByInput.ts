@@ -13,4 +13,5 @@ export type AddressOrderByInput = {
   zip3?: SortOrder;
   zip4?: SortOrder;
   zip5?: SortOrder;
+  zip6?: SortOrder;
 };

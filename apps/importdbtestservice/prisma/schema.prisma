@@ -82,7 +82,8 @@ model Address {
   zip2      String?    @muly @yuval
   zip3      String?
   zip4      String?
-  zip5      String?
+  zip5      String?    @zip5prop
+  zip6      String?
 }
 
 model Product {
