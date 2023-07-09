@@ -13,7 +13,6 @@ export const ClassModelEdit = (props: EditProps): React.ReactElement => {
       <SimpleForm>
         <BooleanInput label="New Field" source="newField" />
         <TextInput label="Muly" source="muly" />
-        <TextInput label="classfield" source="classfield" />
       </SimpleForm>
     </Edit>
   );
