@@ -9,4 +9,5 @@ export type AddressCreateInput = {
   zip?: number | null;
   zip2?: string | null;
   zip3?: string | null;
+  zip4?: string | null;
 };
