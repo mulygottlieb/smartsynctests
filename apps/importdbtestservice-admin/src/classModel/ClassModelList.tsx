@@ -24,7 +24,6 @@ export const ClassModelList = (props: ListProps): React.ReactElement => {
         <DateField source="updatedAt" label="Updated At" />
         <BooleanField label="New Field" source="newField" />
         <TextField label="Muly" source="muly" />
-        <TextField label="classfield" source="classfield" />
       </Datagrid>
     </List>
   );

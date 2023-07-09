@@ -30,7 +30,6 @@ export const SomeThingList = (props: ListProps): React.ReactElement => {
         </ReferenceField>
         <TextField label="Id" source="id" />
         <DateField source="updatedAt" label="Updated At" />
-        <TextField label="newfield" source="newfield" />
       </Datagrid>
     </List>
   );

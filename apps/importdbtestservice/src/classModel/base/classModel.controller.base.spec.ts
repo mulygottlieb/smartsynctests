@@ -24,7 +24,6 @@ const CREATE_INPUT = {
   updatedAt: new Date(),
   newField: "true",
   muly: "exampleMuly",
-  classfield: "exampleClassfield",
 };
 const CREATE_RESULT = {
   createdAt: new Date(),
@@ -32,7 +31,6 @@ const CREATE_RESULT = {
   updatedAt: new Date(),
   newField: "true",
   muly: "exampleMuly",
-  classfield: "exampleClassfield",
 };
 const FIND_MANY_RESULT = [
   {
@@ -41,7 +39,6 @@ const FIND_MANY_RESULT = [
     updatedAt: new Date(),
     newField: "true",
     muly: "exampleMuly",
-    classfield: "exampleClassfield",
   },
 ];
 const FIND_ONE_RESULT = {
@@ -50,7 +47,6 @@ const FIND_ONE_RESULT = {
   updatedAt: new Date(),
   newField: "true",
   muly: "exampleMuly",
-  classfield: "exampleClassfield",
 };
 
 const service = {
