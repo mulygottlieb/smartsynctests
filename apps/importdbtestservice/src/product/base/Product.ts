@@ -88,6 +88,17 @@ class Product {
     nullable: true,
   })
   description!: string | null;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  productfield!: string | null;
 }
 
 export { Product as Product };
