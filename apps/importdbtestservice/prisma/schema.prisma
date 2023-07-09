@@ -33,7 +33,7 @@ model Admin {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   firstName String?
-  lastName  String?  @mor
+  lastName  String?  @mor @hagbi
   username  String   @unique
   password  String
   roles     Json
