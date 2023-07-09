@@ -13,7 +13,6 @@ export const ClassModelCreate = (props: CreateProps): React.ReactElement => {
       <SimpleForm>
         <BooleanInput label="New Field" source="newField" />
         <TextInput label="Muly" source="muly" />
-        <TextInput label="classfield" source="classfield" />
       </SimpleForm>
     </Create>
   );

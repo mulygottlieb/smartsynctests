@@ -5,7 +5,6 @@ import {
   CreateProps,
   ReferenceInput,
   SelectInput,
-  TextInput,
 } from "react-admin";
 import { CustomerTitle } from "../customer/CustomerTitle";
 
@@ -20,7 +19,6 @@ export const SomeThingCreate = (props: CreateProps): React.ReactElement => {
         >
           <SelectInput optionText={CustomerTitle} />
         </ReferenceInput>
-        <TextInput label="newfield" source="newfield" />
       </SimpleForm>
     </Create>
   );
