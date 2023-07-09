@@ -49,6 +49,17 @@ class SomeThing {
   @Type(() => Date)
   @Field(() => Date)
   updatedAt!: Date;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  newfield!: string | null;
 }
 
 export { SomeThing as SomeThing };
