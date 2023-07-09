@@ -5,4 +5,5 @@ export type SomeThingOrderByInput = {
   customerId?: SortOrder;
   id?: SortOrder;
   updatedAt?: SortOrder;
+  newfield?: SortOrder;
 };

@@ -23,6 +23,7 @@ export const SomeThingShow = (props: ShowProps): React.ReactElement => {
         </ReferenceField>
         <TextField label="Id" source="id" />
         <DateField source="updatedAt" label="Updated At" />
+        <TextField label="newfield" source="newfield" />
       </SimpleShowLayout>
     </Show>
   );
