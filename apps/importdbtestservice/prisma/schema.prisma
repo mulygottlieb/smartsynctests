@@ -87,13 +87,14 @@ model Address {
 }
 
 model Product {
-  orders      Order[]
-  id          String   @id @default(cuid())
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-  name        String?
-  itemPrice   Float?
-  description String?
+  orders       Order[]
+  id           String   @id @default(cuid())
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  name         String?
+  itemPrice    Float?
+  description  String?
+  productfield String?
 }
 
 model SomeThing {
