@@ -8,4 +8,5 @@ export type OrderUpdateInput = {
   customer?: CustomerWhereUniqueInput | null;
   product?: ProductWhereUniqueInput | null;
   status?: "PENDING" | "COMPLETED" | "CANCELLED" | null;
+  orderfields?: string | null;
 };

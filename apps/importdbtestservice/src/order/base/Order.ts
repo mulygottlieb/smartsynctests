@@ -112,6 +112,17 @@ class Order {
     nullable: true,
   })
   status?: "PENDING" | "COMPLETED" | "CANCELLED" | null;
+
+  @ApiProperty({
+    required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  orderfields!: string | null;
 }
 
 export { Order as Order };
