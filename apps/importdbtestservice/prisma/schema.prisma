@@ -19,12 +19,11 @@ model User {
 }
 
 model ClassModel {
-  createdAt  DateTime @default(now())
-  id         String   @id @default(cuid())
-  updatedAt  DateTime @updatedAt
-  newField   Boolean  @map("new")
-  muly       String?
-  classfield String?
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+  newField  Boolean  @map("new")
+  muly      String?
 
   @@map("Class")
 }
@@ -34,25 +33,24 @@ model Admin {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   firstName String?
-  lastName  String?  @hazaz
+  lastName  String?
   username  String   @unique
   password  String
   roles     Json
 }
 
 model Order {
-  id          String           @id @default(cuid())
-  createdAt   DateTime         @default(now())
-  updatedAt   DateTime         @updatedAt
-  quantity    Int?
-  discount    Float?
-  totalPrice  Int?             @totalpriceatt @totprice2att
-  customer    Customer?        @relation(fields: [customerId], references: [id])
-  customerId  String?
-  product     Product?         @relation(fields: [productId], references: [id])
-  productId   String?
-  status      EnumOrderStatus? @default(PENDING)
-  orderfields String?
+  id         String           @id @default(cuid())
+  createdAt  DateTime         @default(now())
+  updatedAt  DateTime         @updatedAt
+  quantity   Int?
+  discount   Float?
+  totalPrice Int?
+  customer   Customer?        @relation(fields: [customerId], references: [id])
+  customerId String?
+  product    Product?         @relation(fields: [productId], references: [id])
+  productId  String?
+  status     EnumOrderStatus? @default(PENDING)
 }
 
 model Customer {
@@ -67,7 +65,8 @@ model Customer {
   phone        String?
   updatedAt    DateTime                  @updatedAt
   customerType EnumCustomerCustomerType? @default(INDIVIDUAL)
-  someThing    SomeThing?
+  someThing    SomeThing?                @relation(fields: [someThingId], references: [id])
+  someThingId  String?
 }
 
 model Address {
@@ -80,22 +79,17 @@ model Address {
   city      String?
   state     String?
   zip       Int?
-  zip2      String?    @muly
-  zip3      String?
-  zip4      String?
-  zip5      String?    @zip5prop
-  zip6      String?
+  zip2      String?
 }
 
 model Product {
-  orders       Order[]
-  id           String   @id @default(cuid())
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
-  name         String?
-  itemPrice    Float?
-  description  String?
-  productfield String?
+  orders      Order[]
+  id          String   @id @default(cuid())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  name        String?
+  itemPrice   Float?
+  description String?
 }
 
 model SomeThing {
@@ -103,7 +97,6 @@ model SomeThing {
   customer  Customer?
   id        String    @id @default(cuid())
   updatedAt DateTime  @updatedAt
-  newfield  String?
 }
 
 enum EnumOrderStatus {
