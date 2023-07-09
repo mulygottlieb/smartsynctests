@@ -10,4 +10,5 @@ export type AddressOrderByInput = {
   state?: SortOrder;
   zip?: SortOrder;
   zip2?: SortOrder;
+  zip3?: SortOrder;
 };

@@ -30,6 +30,7 @@ export const AddressCreate = (props: CreateProps): React.ReactElement => {
         <TextInput label="State" source="state" />
         <NumberInput step={1} label="Zip" source="zip" />
         <TextInput label="Zip2" source="zip2" />
+        <TextInput label="Zip3" source="zip3" />
       </SimpleForm>
     </Create>
   );
