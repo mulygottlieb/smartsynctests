@@ -14,6 +14,7 @@ import { ApiProperty } from "@nestjs/swagger";
 import { CustomerWhereUniqueInput } from "../../customer/base/CustomerWhereUniqueInput";
 import { ValidateNested, IsOptional } from "class-validator";
 import { Type } from "class-transformer";
+import { StringNullableFilter } from "../../util/StringNullableFilter";
 
 @InputType()
 class SomeThingWhereInput {
@@ -28,6 +29,17 @@ class SomeThingWhereInput {
     nullable: true,
   })
   customer?: CustomerWhereUniqueInput;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
+  newfield?: StringNullableFilter;
 }
 
 export { SomeThingWhereInput as SomeThingWhereInput };
