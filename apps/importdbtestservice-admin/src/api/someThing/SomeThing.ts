@@ -5,4 +5,5 @@ export type SomeThing = {
   customer?: Customer | null;
   id: string;
   updatedAt: Date;
+  newfield: string | null;
 };
