@@ -62,6 +62,17 @@ class AddressWhereInput {
     nullable: true,
   })
   zip4?: StringNullableFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
+  zip5?: StringNullableFilter;
 }
 
 export { AddressWhereInput as AddressWhereInput };
