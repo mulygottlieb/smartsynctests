@@ -6,4 +6,5 @@ export type AddressWhereInput = {
   zip2?: StringNullableFilter;
   zip3?: StringNullableFilter;
   zip4?: StringNullableFilter;
+  zip5?: StringNullableFilter;
 };
