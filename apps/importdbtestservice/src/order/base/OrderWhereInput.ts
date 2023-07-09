@@ -15,6 +15,7 @@ import { CustomerWhereUniqueInput } from "../../customer/base/CustomerWhereUniqu
 import { ValidateNested, IsOptional } from "class-validator";
 import { Type } from "class-transformer";
 import { ProductWhereUniqueInput } from "../../product/base/ProductWhereUniqueInput";
+import { StringNullableFilter } from "../../util/StringNullableFilter";
 
 @InputType()
 class OrderWhereInput {
@@ -41,6 +42,17 @@ class OrderWhereInput {
     nullable: true,
   })
   product?: ProductWhereUniqueInput;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
+  orderfields?: StringNullableFilter;
 }
 
 export { OrderWhereInput as OrderWhereInput };
