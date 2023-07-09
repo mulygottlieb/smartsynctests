@@ -22,23 +22,27 @@ const CREATE_INPUT = {
   createdAt: new Date(),
   id: "exampleId",
   updatedAt: new Date(),
+  newfield: "exampleNewfield",
 };
 const CREATE_RESULT = {
   createdAt: new Date(),
   id: "exampleId",
   updatedAt: new Date(),
+  newfield: "exampleNewfield",
 };
 const FIND_MANY_RESULT = [
   {
     createdAt: new Date(),
     id: "exampleId",
     updatedAt: new Date(),
+    newfield: "exampleNewfield",
   },
 ];
 const FIND_ONE_RESULT = {
   createdAt: new Date(),
   id: "exampleId",
   updatedAt: new Date(),
+  newfield: "exampleNewfield",
 };
 
 const service = {
