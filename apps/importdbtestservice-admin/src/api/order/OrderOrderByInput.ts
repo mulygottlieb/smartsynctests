@@ -10,4 +10,5 @@ export type OrderOrderByInput = {
   customerId?: SortOrder;
   productId?: SortOrder;
   status?: SortOrder;
+  orderfields?: SortOrder;
 };

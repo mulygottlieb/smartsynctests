@@ -240,6 +240,7 @@ export class ProductControllerBase {
         },
 
         status: true,
+        orderfields: true,
       },
     });
     if (results === null) {
