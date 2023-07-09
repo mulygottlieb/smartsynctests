@@ -27,6 +27,17 @@ class ClassModelWhereInput {
     nullable: true,
   })
   muly?: StringNullableFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
+  classfield?: StringNullableFilter;
 }
 
 export { ClassModelWhereInput as ClassModelWhereInput };

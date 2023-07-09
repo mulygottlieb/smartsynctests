@@ -6,4 +6,5 @@ export type ClassModelOrderByInput = {
   updatedAt?: SortOrder;
   newField?: SortOrder;
   muly?: SortOrder;
+  classfield?: SortOrder;
 };

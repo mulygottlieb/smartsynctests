@@ -19,11 +19,12 @@ model User {
 }
 
 model ClassModel {
-  createdAt DateTime @default(now())
-  id        String   @id @default(cuid())
-  updatedAt DateTime @updatedAt
-  newField  Boolean  @map("new")
-  muly      String?
+  createdAt  DateTime @default(now())
+  id         String   @id @default(cuid())
+  updatedAt  DateTime @updatedAt
+  newField   Boolean  @map("new")
+  muly       String?
+  classfield String?
 
   @@map("Class")
 }
