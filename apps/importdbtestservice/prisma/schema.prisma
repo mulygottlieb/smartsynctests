@@ -65,8 +65,7 @@ model Customer {
   phone        String?
   updatedAt    DateTime                  @updatedAt
   customerType EnumCustomerCustomerType? @default(INDIVIDUAL)
-  someThing    SomeThing?                @relation(fields: [someThingId], references: [id])
-  someThingId  String?
+  someThing    SomeThing?
 }
 
 model Address {
@@ -79,7 +78,7 @@ model Address {
   city      String?
   state     String?
   zip       Int?
-  zip2      String?
+  zip2      String?    @muly
   zip3      String?
   zip4      String?
 }
