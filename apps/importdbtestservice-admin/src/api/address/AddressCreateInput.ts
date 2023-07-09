@@ -8,4 +8,5 @@ export type AddressCreateInput = {
   state?: string | null;
   zip?: number | null;
   zip2?: string | null;
+  zip3?: string | null;
 };

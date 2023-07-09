@@ -28,6 +28,7 @@ const CREATE_INPUT = {
   state: "exampleState",
   zip: 42,
   zip2: "exampleZip2",
+  zip3: "exampleZip3",
 };
 const CREATE_RESULT = {
   id: "exampleId",
@@ -39,6 +40,7 @@ const CREATE_RESULT = {
   state: "exampleState",
   zip: 42,
   zip2: "exampleZip2",
+  zip3: "exampleZip3",
 };
 const FIND_MANY_RESULT = [
   {
@@ -51,6 +53,7 @@ const FIND_MANY_RESULT = [
     state: "exampleState",
     zip: 42,
     zip2: "exampleZip2",
+    zip3: "exampleZip3",
   },
 ];
 const FIND_ONE_RESULT = {
@@ -63,6 +66,7 @@ const FIND_ONE_RESULT = {
   state: "exampleState",
   zip: 42,
   zip2: "exampleZip2",
+  zip3: "exampleZip3",
 };
 
 const service = {
