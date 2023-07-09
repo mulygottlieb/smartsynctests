@@ -38,6 +38,7 @@ export const OrderList = (props: ListProps): React.ReactElement => {
           <TextField source={PRODUCT_TITLE_FIELD} />
         </ReferenceField>
         <TextField label="Status" source="status" />
+        <TextField label="orderfields" source="orderfields" />
       </Datagrid>
     </List>
   );
