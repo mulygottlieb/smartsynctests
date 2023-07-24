@@ -11,7 +11,7 @@ model User {
   createdAt DateTime @default(now())
   firstName String?
   fld1      String?
-  fld2      String?
+  fld2      String?  @myprop1
   id        String   @id @default(cuid())
   lastName  String?
   password  String
