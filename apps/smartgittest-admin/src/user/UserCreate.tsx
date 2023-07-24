@@ -17,6 +17,7 @@ export const UserCreate = (props: CreateProps): React.ReactElement => {
       <SimpleForm>
         <TextInput label="First Name" source="firstName" />
         <TextInput label="fld1" source="fld1" />
+        <TextInput label="fld2" source="fld2" />
         <TextInput label="Last Name" source="lastName" />
         <PasswordInput label="Password" source="password" />
         <SelectArrayInput

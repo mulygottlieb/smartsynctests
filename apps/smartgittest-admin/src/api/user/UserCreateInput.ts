@@ -3,6 +3,7 @@ import { InputJsonValue } from "../../types";
 export type UserCreateInput = {
   firstName?: string | null;
   fld1?: string | null;
+  fld2?: string | null;
   lastName?: string | null;
   password: string;
   roles: InputJsonValue;
