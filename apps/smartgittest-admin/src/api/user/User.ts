@@ -4,6 +4,7 @@ export type User = {
   createdAt: Date;
   firstName: string | null;
   fld1: string | null;
+  fld2: string | null;
   id: string;
   lastName: string | null;
   roles: JsonValue;
